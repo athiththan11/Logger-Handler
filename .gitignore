@@ -12,3 +12,5 @@ buildNumber.properties
 .classpath
 .settings/
 .project
+
+.DS_Store
