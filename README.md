@@ -46,7 +46,7 @@ For this demo, I will choose `_TokenAPI_.xml` from the API Synapse Configuraiton
 </api>
 ```
 
-Add our custom handler inside the `Handlers` section, which will result in ... 
+Add our custom handler inside the `Handlers` section, which will result in ...
 
 ```xml
 <handlers>
@@ -61,10 +61,10 @@ Add our custom handler inside the `Handlers` section, which will result in ...
 
 ## Enable Log4J Property
 
-Navigate and open the `<API-M HOME>/repository/conf/log4j.properties` file, and append the following line at the bottom 
+Navigate and open the `<API-M HOME>/repository/conf/log4j.properties` file, and append the following line at the bottom
 
 ```properties
-# custom handler logger
+# enabling custom handler's logger
 log4j.logger.com.sample.handlers.CustomLoggerHandler = DEBUG
 ```
 
