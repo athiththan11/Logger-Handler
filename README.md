@@ -68,6 +68,30 @@ Navigate and open the `<API-M HOME>/repository/conf/log4j.properties` file, and 
 log4j.logger.com.sample.handlers.CustomLoggerHandler = DEBUG
 ```
 
+## Run
+
+Start your WSO2 API Manager server by executing the command from your `<API-M HOME>/bin` folder
+
+```shell
+sh wso2server.sh
+```
+
+or
+
+```shell
+wso2am-2.6.0
+```
+
+## Test & Results
+
+Assuming that you have published an API to the Store and generated `Access Token` for the related Application in the WSO2 API Manager Store Portal. Use the following cUrl command to invoke the `token` endpoint to generate a new access token
+
+```cUrl
+curl -k -d "grant_type=client_credentials" -H "Authorization: Basic <BASE64(client_id:client_secret)>" https://<YOUR IP ADDRESS>/token
+```
+
+After a successful execution, You can find the relative logs inside the console in which the WSO2 API Manager was started.
+
 ---
 
 You can find more about Creating Custom Handlers for WSO2 API Manager in [here](https://docs.wso2.com/display/AM260/Writing+Custom+Handlers)
