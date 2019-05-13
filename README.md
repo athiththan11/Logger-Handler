@@ -73,7 +73,11 @@ log4j.logger.com.sample.handlers.CustomLoggerHandler = DEBUG
 Start your WSO2 API Manager server by executing the command from your `<API-M HOME>/bin` folder
 
 ```shell
+# if linux or mac
 sh wso2server.sh
+
+# if windows
+wso2server.bat
 ```
 
 or
